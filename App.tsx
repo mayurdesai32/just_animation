@@ -22,6 +22,9 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import ImageList from './src/screens/ImageList';
 import AnimatedTextScreen from './src/screens/AnimatedTextScreen';
 import LayoutAnimationComp from './src/screens/LayoutAnimationComp';
+import InputNumber from './src/screens/InputNumber';
+import MyImageShader from './src/screens/MyImageShader';
+import ButterFlyScreen from './src/screens/ButterFlyScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,7 +34,7 @@ const App = () => {
       <GestureHandlerRootView style={{flex: 1}}>
         <StatusBar />
         <NavigationContainer>
-          <Stack.Navigator initialRouteName="LayoutAnimationComp">
+          <Stack.Navigator initialRouteName="ButterFlyScreen">
             <Stack.Screen
               name="home"
               component={HomeScreens}
@@ -70,6 +73,21 @@ const App = () => {
               name="LayoutAnimationComp"
               component={LayoutAnimationComp}
               options={{title: 'LayoutAnimationComp', headerShown: true}}
+            />
+            <Stack.Screen
+              name="InputNumber"
+              component={InputNumber}
+              options={{title: 'InputNumber', headerShown: false}}
+            />
+            <Stack.Screen
+              name="MyImageShader"
+              component={MyImageShader}
+              options={{title: 'MyImageShader', headerShown: false}}
+            />
+            <Stack.Screen
+              name="ButterFlyScreen"
+              component={ButterFlyScreen}
+              options={{title: 'ButterFlyScreen', headerShown: false}}
             />
           </Stack.Navigator>
         </NavigationContainer>
