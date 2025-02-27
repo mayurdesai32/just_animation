@@ -126,8 +126,8 @@ const [ids,setIds]=useState<number[]>([0])
           return (
             <Animated.View
               // layout={LinearTransition}
-              // layout={LinearTransition.duration(1000)}
-              layout={LinearTransition.springify()}
+              layout={LinearTransition.duration(1000)}
+              // layout={LinearTransition.springify()}
               entering={FadeIn.duration(1000)}
               exiting={FadeOut.duration(1000)}
               key={e}

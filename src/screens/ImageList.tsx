@@ -116,8 +116,9 @@ const rImageStyle=useAnimatedStyle(()=>{
   const translateX = interpolate(
     scrollOffset.value,
     [itemWidth * (index - 1), itemWidth * index, itemWidth * (index + 1)],
-    [screenWidth, 0,screenWidth],
+    [screenWidth, 0, screenWidth],
   );
+ 
   return {
     transform: [{scale: 1.5}, {translateX: translateX}],
   };

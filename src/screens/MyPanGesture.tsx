@@ -72,7 +72,6 @@ return withTiming(color.value)
         style={{
           flex: 1,
           backgroundColor: 'white',
-
           justifyContent: 'center',
           alignItems: 'center',
         }}>
